@@ -38,12 +38,15 @@ function MyBook() {
       pdf: "Books/pdf/JLPT_N2.pdf",
       buy: [
         {
-          name: "Amazon",
+          name: "Amazonで買う",
           url: "https://www.amazon.co.jp/dp/4910337164?_encoding=UTF8&psc=1&ref=cm_sw_r_ffobk_cp_ud_dp_5F26WYGGZX132HYA8KAX_1&ref_=cm_sw_r_ffobk_cp_ud_dp_5F26WYGGZX132HYA8KAX_1&social_share=cm_sw_r_ffobk_cp_ud_dp_5F26WYGGZX132HYA8KAX_1&bestFormat=true",
         },
-        { name: "Korea", url: "https://www.yes24.com/product/goods/146738725" },
         {
-          name: "Taiwan",
+          name: "韓国から買う",
+          url: "https://www.yes24.com/product/goods/146738725",
+        },
+        {
+          name: "台湾から買う",
           url: "https://www.books.com.tw/products/0011035279?utm_source=www&utm_medium=share&utm_content=copy&utm_campaign=product&utm_term=0011035279",
         },
       ],
@@ -58,12 +61,15 @@ function MyBook() {
       pdf: "Books/pdf/JLPT_N3.pdf",
       buy: [
         {
-          name: "Amazon",
+          name: "Amazonで買う",
           url: "https://www.amazon.co.jp/dp/4910337172?_encoding=UTF8&psc=1&ref=cm_sw_r_ffobk_cp_ud_dp_MD01K6QWNBTN3S41YH9F&ref_=cm_sw_r_ffobk_cp_ud_dp_MD01K6QWNBTN3S41YH9F&social_share=cm_sw_r_ffobk_cp_ud_dp_MD01K6QWNBTN3S41YH9F&bestFormat=true",
         },
-        { name: "Korea", url: "https://www.yes24.com/product/goods/142844421" },
         {
-          name: "Taiwan",
+          name: "韓国から買う",
+          url: "https://www.yes24.com/product/goods/142844421",
+        },
+        {
+          name: "台湾から買う",
           url: "https://www.books.com.tw/products/0011029270?sloc=main_mb",
         },
       ],

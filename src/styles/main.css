@@ -322,17 +322,6 @@ body {
   z-index: 1055;
 }
 
-.custom-modal-box {
-  /* background: #efefef;
-  width: 78%;
-  max-width: 780px;
-  height: 280px;
-  border-radius: 10px;
-  padding: 70px 40px;
-  position: relative;
-  animation: fadeIn 0.2s ease; */
-}
-
 .buy-modal {
   background: #efefef;
   width: 78%;
