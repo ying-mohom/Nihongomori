@@ -1,68 +1,424 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.text-green-color {
+  color: #039d5d;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* ************** CSS for Navbar Start *******************************/
+.custom-margin {
+  margin-left: auto;
+  gap: 3px;
+}
+
+.nav-link {
+  color: #0c0c0c;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.navbar-icon {
+  color: #039D5D;
+}
+
+.navbar-button {
+  width: 110px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-sidebar {
+  right: 10px;
+  transform: translateY(140%);
+  z-index: 1050;
+  margin-right: 20px;
+}
+
+.social-sidebar img {
+  width: 73px;
+  height: 73px;
+  margin-bottom: 9px;
+}
+
+/* **************CSS for Navbar End****************************** */
+
+/* **************CSS for Sub Nav Start****************************** */
+.breadcrumb-arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #6c757d;
+  border-right: 2px solid #6c757d;
+  transform: rotate(45deg);
+  margin: 0 6px;
+}
+
+/* **************CSS for Sub Nav End****************************** */
+
+/* **************CSS for Card  Start***************************** */
+.card {
+  width: 500px;
+  border-radius: 20px;
+  margin: auto auto 1rem;
+  padding: .3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.card img {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
+/* **************CSS for Card  End****************************** */
+
+/* **************CSS for Introduce Page****************************** */
+/* CSS for First Carousel  Start*/
+.carousel-indicators [data-bs-target] {
+  width: 6px !important;
+  height: 6px !important;
+  margin: 0 6px !important;
+
+  background-color: #cfcfcf !important;
+  background-image: none !important;
+
+  border: none !important;
+  border-radius: 50% !important;
+
+  opacity: 1 !important;
+  box-shadow: none !important;
+
+  display: inline-block !important;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: #000 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #039D5D !important;
+}
+
+.carousel-stage {
+  position: relative;
+  display: inline-block;
+  padding-top: 60px;
+  padding-right: 60px;
+}
+
+.carousel-image-wrapper {
+  aspect-ratio: 15 / 9;
+}
+
+.carousel-inner img {
+  width: 90%;
+  object-fit: cover;
+  display: block;
+  margin: auto auto;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-balloon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(5%, -1%);
+  pointer-events: none;
+  max-width: 250px;
+}
+
+.carousel-balloon span {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-29%, -50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(135deg);
+}
+
+.carousel-control-next-icon {
+  transform: rotate(-45deg);
+}
+
+.carousel-control-prev {
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.carousel-control-next {
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.carousel-item .balloon-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+
+/* CSS for First Carousel  End*/
+
+/* CSS for Second Carousel Start */
+#secondCarousel .carousel-control-prev,
+#secondCarousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+#secondCarousel .carousel-control-prev-icon,
+#secondCarousel .carousel-control-next-icon {
+  background-image: none;
+  width: 20px;
+  height: 20px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+#secondCarousel .carousel-control-prev {
+  left: 80px;
+}
+
+#secondCarousel .carousel-control-next {
+  right: 110px;
+}
+
+#secondCarousel .carousel-indicators {
+  position: static;
+  margin-top: 15px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bottom-gray-box {
+  background-color: #fffafa;
+  min-height: 80px;
+  white-space: pre-line;
+  flex-direction: column;
+}
+
+/* CSS for Second Carousel End */
+.review-section {
+  color: #039d5d;
+  text-decoration: none;
+  border: 2px solid #039d5d;
+  min-width: 300px;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.preview-image {
+  border: 2px solid #02af67;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+/* **************CSS for Introduce Page End****************************** */
+
+/* **************CSS My Book Page****************************** */
+.orange-btn {
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  background: #ffe9db;
+  color: #ff6b0b;
+  border: 2px solid #ff6b0b;
+  box-shadow: 0 5px 0 #ff6b0b;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.my-book-wrapper-detail img {
+  width: 100%;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, .3));
+}
+
+.my-book-wrapper-detail .item-content {
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.my-book-wrapper-detail .item-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-book-wrapper-detail .item-action .btn-buy-paper-book {
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+  background: #06c755;
+  border: 2px solid #06c755;
+  box-sizing: border-box;
+  box-shadow: 0 5px 0 #039d5d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.my-book-wrapper-detail .item-action img {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1055;
+}
+
+.custom-modal-box {
+  /* background: #efefef;
+  width: 78%;
+  max-width: 780px;
+  height: 280px;
+  border-radius: 10px;
+  padding: 70px 40px;
+  position: relative;
+  animation: fadeIn 0.2s ease; */
+}
+
+.buy-modal {
+  background: #efefef;
+  width: 78%;
+  max-width: 780px;
+  height: 280px;
+  border-radius: 10px;
+  padding: 40px 40px;
+  position: relative;
+  animation: fadeIn 0.2s ease;
+}
+
+.buy-layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BUY buttons */
+.custom-buy-btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: white;
+  font-size: 24px;
+  transition: 0.2s ease;
+}
+
+.schedule-modal {
+  background: #efefef;
+  max-height: 85%;
+  border-radius: 10px;
+  padding: 40px 40px;
+  position: relative;
+  animation: fadeIn 0.2s ease;
+}
+
+.schedule-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Schedule buttons */
+.custom-schedule-btn {
+  width: 280px;
+  height: 80px;
+  border-radius: 22px;
+  border: 1px solid #999;
+  background: #f7f5f5;
+  font-size: 18px;
+  box-shadow: 0 4px 0 #cfcfcf;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+/* Close button */
+.custom-close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 26px;
+  border: none;
+  background: transparent;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+
+.custom-close:hover {
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
+
+/* **************CSS My Book Page****************************** */
