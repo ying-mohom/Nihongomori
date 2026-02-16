@@ -29,7 +29,7 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item ms-3">
-                <NavLink className="nav-link" to="/plans">
+                <NavLink className="nav-link" to="/plan">
                   プラン
                 </NavLink>
               </li>
@@ -80,7 +80,7 @@ function Navbar() {
           rel="noreferrer"
           className=""
         >
-          <img src="images/facebook.png" alt="facebook" />
+          <img src="/images/facebook.png" alt="facebook" />
         </a>
         <a
           href="https://instagram.com"
@@ -88,14 +88,14 @@ function Navbar() {
           rel="noreferrer"
           className=""
         >
-          <img src="images/instagram.png" alt="instagram" />
+          <img src="/images/instagram.png" alt="instagram" />
         </a>
         <a
           href="https://line.me/R/ti/p/@564avkzx?from=page&accountId=564avkzx"
           target="_blank"
           rel="noreferrer"
         >
-          <img src="images/line.png" alt="line" />
+          <img src="/images/line.png" alt="line" />
         </a>
       </div>
     </>

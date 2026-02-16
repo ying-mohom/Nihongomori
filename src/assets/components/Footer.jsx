@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <hr />
+        <hr className="mt-0" />
         <div className="container">
           <div className="row">
             {/* Left Section */}
@@ -80,7 +80,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="images/downloadOnAppStore.png" alt="App Store" />
+                  <img src="/images/downloadOnAppStore.png" alt="App Store" />
                 </a>
 
                 <a
@@ -88,7 +88,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="images/getOnGooglePlay.png" alt="Google Play" />
+                  <img src="/images/getOnGooglePlay.png" alt="Google Play" />
                 </a>
               </div>
             </div>
@@ -100,19 +100,19 @@ function Footer() {
             {/* Plant Group */}
             <div className="position-relative d-flex align-items-end">
               <img
-                src="images/footer.png"
+                src="/images/footer.png"
                 alt="small plant"
-                height="30"
-                width="30"
+                height="38"
+                width="50"
               />
 
               <img
-                src="images/footer.png"
+                src="/images/footer.png"
                 alt="big plant"
-                height="50"
-                width="40"
+                height="80"
+                width="60"
                 className="position-relative"
-                style={{ marginLeft: "-30px" }}
+                style={{ marginLeft: "-45px" }}
               />
             </div>
 

@@ -76,7 +76,7 @@ function Introduce() {
             backgroundColor: "#039d5d",
             color: "white",
           }}
-          to="/"
+          to="/plan"
         >
           今すぐ勉強をはじめる
         </Link>
@@ -88,7 +88,7 @@ function Introduce() {
       <div className="d-flex justify-content-center mt-5 mx-auto">
         <Link
           className="d-flex align-items-center justify-content-center fs-4 fw-bold px-5 py-2 review-section"
-          to="/"
+          to="/my-book"
         >
           本のレビュー
         </Link>
@@ -125,7 +125,7 @@ function Introduce() {
             maxWidth: "400px",
             height: "50px",
           }}
-          to="/"
+          to="/my-book"
         >
           本を買う
         </Link>

@@ -4,8 +4,12 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
+:root {
+  --main-color: #039d5d;
+}
+
 .text-green-color {
-  color: #039d5d;
+  color: var(--main-color)
 }
 
 /* ************** CSS for Navbar Start *******************************/
@@ -21,7 +25,7 @@ body {
 }
 
 .navbar-icon {
-  color: #039D5D;
+  color: var(--main-color)
 }
 
 .navbar-button {
@@ -101,7 +105,7 @@ body {
 }
 
 .carousel-indicators .active {
-  background-color: #039D5D !important;
+  background-color: var(--main-color) !important;
 }
 
 .carousel-stage {
@@ -235,9 +239,9 @@ body {
 
 /* CSS for Second Carousel End */
 .review-section {
-  color: #039d5d;
+  color: var(--main-color);
   text-decoration: none;
-  border: 2px solid #039d5d;
+  border: 2px solid var(--main-color);
   min-width: 300px;
 }
 
@@ -258,7 +262,7 @@ body {
 
 /* **************CSS for Introduce Page End****************************** */
 
-/* **************CSS My Book Page****************************** */
+/* **************CSS for My Book Page Start****************************** */
 .orange-btn {
   width: 100%;
   height: 48px;
@@ -297,7 +301,7 @@ body {
   background: #06c755;
   border: 2px solid #06c755;
   box-sizing: border-box;
-  box-shadow: 0 5px 0 #039d5d;
+  box-shadow: 0 5px 0 var(--main-color);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -410,4 +414,101 @@ body {
   }
 }
 
-/* **************CSS My Book Page****************************** */
+/* **************CSS for My Book Page End****************************** */
+
+/* **************CSS for Plan Page Start****************************** */
+.our-plan {
+  background: #ededed;
+  padding-top: -50px;
+}
+
+.our-plan .item {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.our-plan .item .title {
+  padding: .5rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, rgba(3, 157, 93, .78), rgba(1, 55, 33, .78));
+  cursor: pointer;
+}
+
+.our-plan .item .image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.our-plan .item .image img {
+  border: 2px solid #f20e0e;
+  border-radius: 1rem;
+  max-width: 85%;
+  height: 300px;
+}
+
+.our-plan .item .price {
+  margin-top: 1rem;
+  border-top: 3px solid #d3d2d2;
+  border-bottom: 3px solid #d3d2d2;
+  padding: 1rem 0;
+  min-height: 6rem;
+  position: relative;
+}
+
+.our-plan .item .price .note {
+  font-size: 1rem;
+  color: #fa0a0a;
+}
+
+.our-plan .item .price .sale-off {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.our-plan .item .price .sale-off img {
+  width: 80px;
+}
+
+.our-plan .item .course {
+  border-bottom: 3px solid #d3d2d2;
+  padding: 1rem 0;
+  min-height: 8rem;
+}
+
+.our-plan .item .course {
+  padding: 1rem 0;
+}
+
+.our-plan .item .action .btn-payment {
+  background: rgba(70, 55, 238, .83);
+  color: #fff;
+  padding: .5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.our-plan .item .expire-day {
+  border-bottom: 3px solid #d3d2d2;
+  padding: 1rem 0;
+}
+
+.our-plan .item .textbook {
+  padding: 1rem 0;
+  min-height: 7.5rem;
+}
+
+/* **************CSS for Plan Page End****************************** */
