@@ -3,51 +3,41 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import SubNav from "../assets/components/SubNav";
 
-const Terms = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <SubNav
-        items={[{ label: "ホームページ", link: "/" }, { label: "利用規約" }]}
+        items={[
+          { label: "ホームページ", link: "/" },
+          { label: "個人情報保護方針" },
+        ]}
       />
       <div className="my-4 container" style={{ color: "#181818" }}>
-        <h3 className="information-page_title mb-5">利用規約</h3>
-        <div className="information-page_main lh-lg">
-          <div style={{ letterSpacing: "0.5px" }}>
-            この利用規約（以下、「本規約」といいます）は、日本語の森　株式会社（以下、「日本語の森」といいます）がインターネット上で提供するネット講議（以下、「公式サイト」といいます）ならびにネット講義アプリ（以下、「公式アプリ」といいます）の利用条件を定めるものです。
-          </div>
-          <div style={{ letterSpacing: "0.5px" }}>
-            公式サイトおよび公式アプリのサービス（以下、「本サービス」といいます）を利用する登録ユーザーの皆さん（以下、「ユーザー」といいます）は、本規約にしたがって、サービスを利用することができます。
-          </div>
-          <div style={{ letterSpacing: "0.5px" }}>
-            また、ユーザーが本規約の「第2章　利用登録」の定めにしたがって本サービスに利用登録をすることにより、ユーザーは本規約の条項に同意したものとみなされます。
+        <h3 className="information-page_title mb-5">個人情報保護方針</h3>
+        <div className="information-page_main">
+          <div>
+            日本語の森　株式会社（以下「日本語の森」といいます。）は、日本語の森が取得した個人情報の取扱いに関し、個人情報の保護に関する法律、個人情報保護に関する指針、その他個人情報保護に関する関係法令を遵守します。
           </div>
           <br />
           <div>
-            <h6 className="fw-bold">Terms of Use</h6>
+            なお、この個人情報保護方針 (以下、「本方針」といいます)
+            に定める内容は、すべて日本の法令に準拠し、日本の法律に従って解釈されるものとします。
+          </div>
+          <br />
+          <div>
+            <h6 className="fw-bold">Privacy Policy</h6>
           </div>
           <div>
-            These Terms of Use (hereinafter referred to as the "Terms")
-            establish the terms and conditions for the use of the online
-            lectures provided by Nihongo no Mori Co., Ltd. (hereinafter referred
-            to as "Nihongo no Mori") on the Internet, including the official
-            website (hereinafter referred to as the "Official Website") and the
-            online lecture application (hereinafter referred to as the "Official
-            App").
+            Nihongo no Mori Co., Ltd. (hereinafter referred to as "Nihongo no
+            Mori") complies with the Act on the Protection of Personal
+            Information, guidelines related to personal information protection,
+            and other related laws concerning the handling of personal
+            information acquired by Nihongo no Mori.
           </div>
           <div>
-            Registered Users (hereinafter referred to as "Users") who use the
-            services of the Official Website and Official App (hereinafter
-            referred to as the "Services") must comply with these Terms.
-          </div>
-          <div>
-            By registering to use the Services in accordance with "Chapter 2.
-            User Registration" of these Terms, Users are deemed to have agreed
-            to the provisions of these Terms.
-          </div>
-          <div>
-            Furthermore, by registering to use the Services in accordance with
-            the provisions of "Chapter 2. User Registration" of these Terms,
-            Users are deemed to have agreed to the provisions of these Terms.
+            Furthermore, the contents defined in this Privacy Policy
+            (hereinafter referred to as "this Policy") will comply with and be
+            interpreted according to the laws of Japan.
           </div>
         </div>
         <br />
@@ -55,61 +45,102 @@ const Terms = () => {
 
         {/* Section 1 */}
         <Row className="mb-5">
-          <h5>1.適用</h5>
+          <h5>1.個人情報の取り扱い</h5>
           <Col md={6} className="pe-4">
             <div className="mt-3">
-              <h6 className="fw-bold mb-1">第1条　（適用の範囲）</h6>
-              本規約は、日本語の森が提供する月額または年額のサービスへのユーザーの登録の有無にかかわらず、
-              日本語の森とすべてのユーザーとの間のサービスの利用にかかわるすべての関係に適用されるものとします。
+              <h6 className="fw-bold mb-1">第1条（定義）</h6>
+              本方針において、「個人情報」という用語は、その情報に関連する特定の個人を識別できる氏名・住所・電話番号・メールアドレスならびにそれに準ずる個人にかかわる情報と定義します。
             </div>
             <div className="mt-4">
-              <h6 className="fw-bold mb-1">第2条　（個別規定）</h6>
-              日本語の森は、本サービスに関して、本規約のほかにも、利用にあたってのルールなど、各種の定め（以下、「個別規定」といいます）をすることがあります。
-              <br />
-              これらの個別規定は、本規約の一部を構成するものとします。
+              <h6 className="fw-bold mb-1">第2条　（個人情報の取得）</h6>
+              日本語の森は、日本語の森が管理するインターネットによるネット講義サイト（以下、「公式サイト」といいます）およびネット講義アプリ（以下、「公式アプリ」といいます）への一般利用者（以下、「ユーザー」といいます）の登録を目的として。
+              または、その他の日本語の森が販売・提供するサービスを購入・利用するユーザーから、ユーザーに係る個人情報を取得します。
             </div>
             <div className="mt-4">
-              <h6 className="fw-bold mb-1">
-                第3条　（本規約と個別規定の関係）
-              </h6>
-              本規約の規定が前項の個別規定の規定と矛盾する場合、個別規定の規定が優先されるものとします。
+              <h6 className="fw-bold mb-1">第3条　（個人情報の利用目的）</h6>
+              日本語の森は、日本語の森が取得した個人情報について、法令に定める場合またはユーザー本人の同意を得た場合を除き、
+              以下に定める利用目的の範囲を超えてユーザーの個人情報を利用することはありません。
             </div>
             <br />
+            <div className="ms-3">
+              【利用目的】
+              <br />
+              ・公式サイトおよび公式アプリの運営・維持・管理
+              <br />
+              ・商品の発送やユーザーから依頼を受けたサービスの提供業務、および取引管理
+              <br />
+              ・日本語の森が提供するサービスの改善
+              <br />
+              ・日本語の森からの新しいサービスの紹介
+              <br />
+              ・日本語の森あてお問合せへの返答、および情報の管理
+              <br />
+              ・日本語の森の公式サイトおよび公式アプリのシステム上、または決済時に問題が発生した際、解決に係るユーザー情報の識別
+              <br />
+              ・日本語の森の採用募集に応募した方の連絡、面接、採用などのすべての管理業務
+            </div>
           </Col>
           <Col md={6} className="p-3" style={{ background: "#f4f8f5" }}>
             <div>
-              <strong>Chapter 1. Application</strong>
+              <span style={{ whiteSpaceCollapse: "preserve" }}>
+                1. Handling of Personal Information
+              </span>
             </div>
-            <br />
             <p>
-              <strong>Section 1 (Scope of Application)</strong>
+              <strong>Article 1 (Definition)</strong>
               <br />
-              These Terms apply to all relationships related to the use of the
-              Services provided by Nihongo no Mori, regardless of whether the
-              User is registered for monthly or annual services.
+              <br />
+              In this Policy, the term "personal information" is defined as
+              information that can identify a specific individual by their name,
+              address, telephone number, email address, and other similar
+              personal-related information.
             </p>
             <br />
             <p>
-              <strong>Section 2 (Individual Provisions)</strong>
+              <strong>Article 2 (Acquisition of Personal Information)</strong>
               <br />
-              Nihongo no Mori may establish various provisions, such as rules
-              for using the Services, in addition to these Terms (hereinafter
-              referred to as "Individual Provisions").
               <br />
-              These Individual Provisions shall form part of these Terms.
+              Nihongo no Mori acquires personal information from users who
+              register for the general use of the official site and the official
+              app. Additionally, personal information is collected from users
+              who purchase or use other services provided by Nihongo no Mori.
             </p>
             <br />
             <p>
               <strong>
-                Section 3 (Relationship between these Terms and Individual
-                Provisions)
+                Article 3 (Purpose of Use of Personal Information)
               </strong>
               <br />
-              In the event of any contradiction between the provisions of these
-              Terms and the Individual Provisions, the Individual Provisions
-              shall prevail.
+              <br />
+              Nihongo no Mori will not use the personal information obtained for
+              any purposes other than those defined below, except as required by
+              law or with the user's consent:
             </p>
-            <br />
+            Purposes of Use:
+            <ul>
+              <li>
+                Operation, maintenance, and management of the official site and
+                the official app
+              </li>
+              <li>
+                Dispatching products and providing services requested by users,
+                and managing transactions
+              </li>
+              <li>Improvement of services offered by Nihongo no Mori</li>
+              <li>Introduction of new services from Nihongo no Mori</li>
+              <li>
+                Responding to inquiries sent to Nihongo no Mori and managing
+                information
+              </li>
+              <li>
+                Identification of user information for resolving issues on the
+                official site, official app systems, or during payment
+              </li>
+              <li>
+                All management activities related to contacting, interviewing,
+                and hiring applicants at Nihongo no Mori
+              </li>
+            </ul>
           </Col>
         </Row>
 
@@ -265,4 +296,4 @@ const Terms = () => {
   );
 };
 
-export default Terms;
+export default PrivacyPolicy;

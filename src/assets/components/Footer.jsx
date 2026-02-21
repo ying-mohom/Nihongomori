@@ -21,33 +21,33 @@ function Footer() {
 
             {/* Center Section */}
             <div className="col-md-4 mt-5 pt-5">
-              <a
-                href="/privacy"
+              <Link
+                to="/privacy-policy"
                 className="d-block mb-4 mt-4 pt-3 text-dark text-decoration-none fs-5"
               >
                 個人情報保護方針
-              </a>
+              </Link>
 
-              <a
-                href="/terms"
+              <Link
+                to="/terms-of-service"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 利用規約
-              </a>
+              </Link>
 
-              <a
-                href="/faq"
+              <Link
+                to="/"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 よくあるご質問（FAQ）
-              </a>
+              </Link>
 
-              <a
-                href="/law"
+              <Link
+                to="/tokushohou"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 特定商取引法に基づく表記
-              </a>
+              </Link>
             </div>
 
             {/* Right Section */}
@@ -65,11 +65,11 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fa-brands fa-youtube navbar-icon fs-1"></i>
+                  <i className="fa-brands fa-youtube navbar-icon fs-1"></i>
                 </a>
 
                 <a href="#" target="_blank" rel="noreferrer">
-                  <i class="fa-brands fa-instagram navbar-icon fs-1"></i>
+                  <i className="fa-brands fa-instagram navbar-icon fs-1"></i>
                 </a>
               </div>
 

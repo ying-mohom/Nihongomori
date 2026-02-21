@@ -1,0 +1,109 @@
+.audio_book__wrapper-title .btn-download {
+    color: #039d5d;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.audio_book__wrapper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.audio_book__wrapper-content .lesson {
+    width: 60%;
+    margin-bottom: 25px;
+    background: #fff;
+    border: 3px solid #1c895c;
+    box-sizing: border-box;
+    box-shadow: 0 5px 0 rgba(24, 24, 24, .4);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px 10px 16px;
+    cursor: pointer;
+}
+
+.audio_book__wrapper-content .lesson .lesson-right {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #039d5d;
+    margin-left: 15px;
+}
+
+.audio_detail_wrapper {
+    background: #f4f4f4;
+    padding: 50px 0 70px;
+}
+
+/* ===== Header Title ===== */
+.audio_detail_wrapper .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.audio_detail_wrapper .header-title p {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #808285;
+    margin: 0;
+}
+
+/* ===== Select Section ===== */
+.header-select {
+    gap: 100px;
+}
+
+/* Arrow Buttons */
+.header-select .select-left,
+.header-select .select-right {
+    cursor: pointer;
+    padding: 18px 25px;
+    background: #039d5d;
+    border: 3px solid #1c895c;
+    box-shadow: 0 5px 0 rgba(24, 24, 24, .4);
+    border-radius: 16px;
+    transition: 0.2s;
+}
+
+/* Center Select Box */
+.select-center {
+    width: 420px;
+    background: #fff;
+    border: 3px solid #1c895c;
+    box-shadow: 0 5px 0 rgba(24, 24, 24, .4);
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+/* Remove default bootstrap look */
+.custom-select {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #039d5d;
+    background: transparent;
+    appearance: none;
+}
+
+.select-center-text {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 45px;
+    color: #039d5d;
+}

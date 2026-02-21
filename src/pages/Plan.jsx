@@ -143,15 +143,10 @@ function Plan() {
               <div className="col-md-4" key={course.id}>
                 <div className="item">
                   {/* Title */}
-                  <div className="title">
-                    <Link
-                      to="/my-book"
-                      className="text-decoration-none text-white"
-                    >
-                      {course.title}
-                      <br />
-                      {course.subTitle}
-                    </Link>
+                  <div className="title text-white">
+                    {course.title}
+                    <br />
+                    {course.subTitle}
                   </div>
 
                   <div className="content">

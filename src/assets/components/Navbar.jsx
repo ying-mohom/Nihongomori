@@ -43,7 +43,7 @@ function Navbar() {
               </a>
 
               <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-youtube navbar-icon fs-4"></i>
+                <i className="fa-brands fa-youtube navbar-icon fs-4"></i>
               </a>
 
               <a
@@ -52,7 +52,7 @@ function Navbar() {
                 rel="noreferrer"
                 className="me-4"
               >
-                <i class="fa-brands fa-instagram navbar-icon fs-4"></i>
+                <i className="fa-brands fa-instagram navbar-icon fs-4"></i>
               </a>
 
               <Link

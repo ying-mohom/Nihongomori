@@ -3,6 +3,7 @@ import BuyButton from "../assets/components/BuyButton";
 import SubNav from "../assets/components/SubNav";
 import OrangeButton from "../assets/components/OrangeButton";
 import Modal from "../assets/components/Modal";
+import { Link } from "react-router-dom";
 
 function MyBook() {
   const [selectedBook, setSelectedBook] = useState(null);
@@ -11,7 +12,6 @@ function MyBook() {
   const firstSection = [
     {
       src: "/images/introduce/JLPT_N1.jpeg",
-      content: "JLPT N1 この一冊で合格する",
       pdf: "Books/pdf/JLPT_N1.pdf",
       buy: [
         {
@@ -31,10 +31,10 @@ function MyBook() {
         { name: "4ヶ月スケジュール", url: "Books/schedule/N1_4months.pdf" },
         { name: "6ヶ月スケジュール", url: "Books/schedule/N1_6months.pdf" },
       ],
+      videoLink: "book-N1",
     },
     {
       src: "/images/introduce/JLPT_N2.jpeg",
-      content: "JLPT N2 この一冊で合格する",
       pdf: "Books/pdf/JLPT_N2.pdf",
       buy: [
         {
@@ -54,10 +54,10 @@ function MyBook() {
         { name: "4ヶ月スケジュール", url: "Books/schedule/N2_4months.pdf" },
         { name: "6ヶ月スケジュール", url: "Books/schedule/N2_6months.pdf" },
       ],
+      videoLink: "book-N2",
     },
     {
       src: "/images/introduce/JLPT_N3.jpeg",
-      content: "JLPT N3 この一冊で合格する",
       pdf: "Books/pdf/JLPT_N3.pdf",
       buy: [
         {
@@ -77,6 +77,7 @@ function MyBook() {
         { name: "4ヶ月スケジュール", url: "Books/schedule/N3_4months.pdf" },
         { name: "6ヶ月スケジュール", url: "Books/schedule/N3_6months.pdf" },
       ],
+      videoLink: "book-N3",
     },
   ];
   const secondSection = [
@@ -223,7 +224,9 @@ function MyBook() {
                   alt="Schedule"
                   onClick={() => openModal(book, "schedule")}
                 />
-                <img src="images/audio.png" alt="Audio" />
+                <Link to={`/audio/${book.videoLink}`}>
+                  <img src="images/audio.png" alt="Audio" />
+                </Link>
               </div>
             </div>
           ))}
