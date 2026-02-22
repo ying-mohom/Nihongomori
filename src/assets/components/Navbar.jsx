@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,31 +6,31 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div className="container">
           {/* Logo */}
-          <Link className="navbar-brand d-flex align-items-center" to="/">
+          <a className="navbar-brand d-flex align-items-center" href="/">
             <img
               src="/images/nihongomorlogo.png"
               alt="日本語の森"
               style={{ height: "50px" }}
             />
-          </Link>
+          </a>
 
           <div className="collapse navbar-collapse ms-4" id="navbarContent">
             {/* Left links */}
             <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/introduce">
+                <a className="nav-link" href="/introduce">
                   日本語の森とは？
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item ms-3">
-                <NavLink className="nav-link" to="my-book">
+                <a className="nav-link" href="my-book">
                   本
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item ms-3">
-                <NavLink className="nav-link" to="/plan">
+                <a className="nav-link" href="/plan">
                   プラン
-                </NavLink>
+                </a>
               </li>
             </ul>
 
@@ -55,18 +54,18 @@ function Navbar() {
                 <i className="fa-brands fa-instagram navbar-icon fs-4"></i>
               </a>
 
-              <Link
+              <a
                 className="btn btn-outline-success rounded-pill navbar-button d-flex align-items-center justify-content-center me-2"
-                to="/login"
+                href="/login"
               >
                 ログイン
-              </Link>
-              <Link
+              </a>
+              <a
                 className="btn btn-success rounded-pill navbar-button d-flex align-items-center justify-content-center"
-                to="/register"
+                href="/register"
               >
                 登録
-              </Link>
+              </a>
             </div>
           </div>
         </div>

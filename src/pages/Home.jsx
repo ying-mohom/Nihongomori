@@ -4,13 +4,13 @@ import Footer from "../assets/components/Footer";
 
 function Home() {
   const cards = [
-    { id: 1, label: "JLPT N1", image: "images/introduce/JLPT_N1.jpeg" },
-    { id: 2, label: "JLPT N2", image: "images/introduce/JLPT_N2.jpeg" },
-    { id: 3, label: "JLPT N3", image: "images/introduce/JLPT_N3.jpeg" },
-    { id: 4, label: "JLPT N4", image: "images/N4_nyumon.png" },
-    { id: 5, label: "JLPT N5", image: "images/N5_nyumon.png" },
-    { id: 6, label: "日本語会話", image: "images/kaiwa.png" },
-    { id: 7, label: "日本文化", image: "images/bunka.png" },
+    { id: 1, label: "JLPT N1", image: "images/introduce/JLPT_N1.jpeg", link: "/jlpt/level_N1" },
+    { id: 2, label: "JLPT N2", image: "images/introduce/JLPT_N2.jpeg", link: "/jlpt/level_N2" },
+    { id: 3, label: "JLPT N3", image: "images/introduce/JLPT_N3.jpeg", link: "/jlpt/level_N3" },
+    { id: 4, label: "JLPT N4", image: "images/N4_nyumon.png", link: "/jlpt/level_N4" },
+    { id: 5, label: "JLPT N5", image: "images/N5_nyumon.png", link: "/jlpt/level_N5" },
+    { id: 6, label: "日本語会話", image: "images/kaiwa.png", link: "/audio" },
+    { id: 7, label: "日本文化", image: "images/bunka.png", link: "/tokushohou" },
   ];
 
   return (
@@ -19,12 +19,12 @@ function Home() {
         <div className="package">
           <div className="item">
             {cards.map((card) => (
-              <div key={card.id} className="card">
+              <div key={card.id} className="card" onClick={() => window.location.href = card.link}>
                 <div className="d-flex align-items-center pb-2">
                   {/* Image */}
                   <img
                     src={card.image}
-                    alt={card.level}
+                    alt={card.label}
                     className="rounded me-5"
                   />
 

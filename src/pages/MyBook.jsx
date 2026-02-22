@@ -3,7 +3,6 @@ import BuyButton from "../assets/components/BuyButton";
 import SubNav from "../assets/components/SubNav";
 import OrangeButton from "../assets/components/OrangeButton";
 import Modal from "../assets/components/Modal";
-import { Link } from "react-router-dom";
 
 function MyBook() {
   const [selectedBook, setSelectedBook] = useState(null);
@@ -224,9 +223,9 @@ function MyBook() {
                   alt="Schedule"
                   onClick={() => openModal(book, "schedule")}
                 />
-                <Link to={`/audio/${book.videoLink}`}>
+                <a href={`/audio/${book.videoLink}`}>
                   <img src="images/audio.png" alt="Audio" />
-                </Link>
+                </a>
               </div>
             </div>
           ))}

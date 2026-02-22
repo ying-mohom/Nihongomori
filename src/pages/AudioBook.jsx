@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SubNav from "../assets/components/SubNav";
 import { useParams } from "react-router-dom";
 import { audioBookConfig } from "../data/audioBookConfig";
@@ -47,15 +46,15 @@ function AudioBook() {
         </div>
         <div className="audio_book__wrapper-content">
           {bookConfig.lessons.map((lesson) => (
-            <Link
+            <a
               key={lesson}
-              to={`/audio/${bookId}/${lesson}`}
+              href={`/audio/${bookId}/${lesson}`}
               className="lesson text-decoration-none"
             >
               <span className="lesson-right">
                 {lesson.replace("audio", "")}
               </span>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

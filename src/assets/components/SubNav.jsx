@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function SubNav({ items, backgroundColor }) {
   return (
@@ -7,7 +6,7 @@ function SubNav({ items, backgroundColor }) {
         <div className="container mt-5 pt-3">
           <div className="d-flex align-items-center mt-4 gap-2">
             {/* Home Icon */}
-            <Link to="/">
+            <a href="/">
               <img
                 src="/images/smile.png"
                 alt="Home"
@@ -18,7 +17,7 @@ function SubNav({ items, backgroundColor }) {
                     "invert(42%) sepia(98%) saturate(400%) hue-rotate(100deg)",
                 }}
               />
-            </Link>
+            </a>
 
             {/* Breadcrumb Items */}
             {items.map((item, index) => (
@@ -28,12 +27,12 @@ function SubNav({ items, backgroundColor }) {
 
                 {/* Link or Text */}
                 {item.link ? (
-                  <Link
-                    to={item.link}
+                  <a
+                    href={item.link}
                     className="text-decoration-none text-dark"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 ) : (
                   <span>{item.label}</span>
                 )}

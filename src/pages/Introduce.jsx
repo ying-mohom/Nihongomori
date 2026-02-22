@@ -1,7 +1,5 @@
 import FirstCarousel from "../assets/components/FirstCarousel";
 import SecondCarousel from "../assets/components/SecondCarousel";
-import { Link } from "react-router-dom";
-
 function Introduce() {
   const fristSlides = [
     {
@@ -70,28 +68,28 @@ function Introduce() {
         <FirstCarousel slides={fristSlides} />
       </div>
       <div className="d-flex justify-content-center mt-5 pt-2 mb-5 mx-auto">
-        <Link
+        <a
           className="rounded-3 d-flex align-items-center justify-content-center fs-5 fw-bold px-5 py-2 text-decoration-none"
           style={{
             backgroundColor: "#039d5d",
             color: "white",
           }}
-          to="/plan"
+          href="/plan"
         >
           今すぐ勉強をはじめる
-        </Link>
+        </a>
       </div>
       <span className="d-block text-center mt-5 pt-3 fs-3 fw-bold text-green-color">
         日本語の森の本
       </span>
       <SecondCarousel slides={SecondSlides} />
       <div className="d-flex justify-content-center mt-5 mx-auto">
-        <Link
+        <a
           className="d-flex align-items-center justify-content-center fs-4 fw-bold px-5 py-2 review-section"
-          to="/my-book"
+          href="/my-book"
         >
           本のレビュー
-        </Link>
+        </a>
       </div>
       <div className="container mt-4 pt-3">
         <div
@@ -116,7 +114,7 @@ function Introduce() {
         </div>
       </div>
       <div className="d-flex justify-content-center mx-auto mt-3 py-2  mb-4">
-        <Link
+        <a
           className="d-flex align-items-center justify-content-center rounded-3 fs-5 fw-bold  text-decoration-none"
           style={{
             backgroundColor: "#039d5d",
@@ -125,10 +123,10 @@ function Introduce() {
             maxWidth: "400px",
             height: "50px",
           }}
-          to="/my-book"
+          href="/my-book"
         >
           本を買う
-        </Link>
+        </a>
       </div>
     </>
   );

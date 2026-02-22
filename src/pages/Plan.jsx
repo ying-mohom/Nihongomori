@@ -1,54 +1,8 @@
 import { course1 } from "../data/course1";
 import { course2 } from "../data/course2";
 import SubNav from "./../assets/components/SubNav";
-import { Link } from "react-router-dom";
 
 function Plan() {
-  //   const secondSection = [
-  //     {
-  //       id: 1,
-  //       title: "BASIC JAPANESE",
-  //       subTitle: "JLPT N5/N4",
-  //       image: "/images/english.png",
-  //       alt: "English",
-  //       price: "Price: N4 ￥5,500 / N5 ￥5,500",
-  //       period: "Period: 6 months",
-  //       textbook: "Minna no Nihongo (Textbook sold separately)",
-  //       buttons: [
-  //         { text: "Payment N4", link: "/" },
-  //         { text: "Payment N5", link: "/" },
-  //       ],
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "基础日语",
-  //       subTitle: "JLPT N5/N4",
-  //       image: "/images/chinese.png",
-  //       alt: "Chinese",
-  //       price: "价格: N4 ￥5,500 / N5 ￥5,500",
-  //       period: "期间: 6个月",
-  //       textbook: "教材: 大家的日语(另售)",
-  //       buttons: [
-  //         { text: "購買 N4", link: "/" },
-  //         { text: "購買 N5", link: "/" },
-  //       ],
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "기초 일본어",
-  //       subTitle: "JLPT N5/N4",
-  //       image: "/images/korea.png",
-  //       alt: "Korean",
-  //       price: "가격: N4 ￥5,500 / N5 ￥5,500",
-  //       period: "기간：6개월",
-  //       textbook: "교재：민나노니혼고 （별매）",
-  //       buttons: [
-  //         { text: "구매 N4", link: "/" },
-  //         { text: "구매 N5", link: "/" },
-  //       ],
-  //     },
-  //   ];
-
   return (
     <div>
       <SubNav
@@ -66,14 +20,14 @@ function Plan() {
                 <div className="item">
                   {/* Title */}
                   <div className="title">
-                    <Link
-                      to={`/payment/${course.id}`}
+                    <a
+                      href={`/payment/${course.id}`}
                       className="text-decoration-none text-white"
                     >
                       {course.title}
                       <br />
                       {course.subTitle}
-                    </Link>
+                    </a>
                   </div>
 
                   <div className="content">
@@ -125,12 +79,12 @@ function Plan() {
 
                     {/* Button */}
                     <div className="action">
-                      <Link
-                        to={`/payment/${course.id}`}
+                      <a
+                        href={`/payment/${course.id}`}
                         className="btn-payment"
                       >
                         しはらう
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -175,9 +129,9 @@ function Plan() {
                     {/* Buttons */}
                     <div className="action">
                       {course?.buttons?.map((btn, index) => (
-                        <Link key={index} to={btn.link} className="btn-payment">
+                        <a key={index} href={btn.link} className="btn-payment">
                           {btn.text}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                   </div>

@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import SubNav from "./SubNav";
-import { Link } from "react-router-dom";
 import YuchoVideoModal from "./YuchoVideoModal";
 import { useParams } from "react-router-dom";
 import { course1 } from "../../data/course1";
@@ -339,15 +338,15 @@ function Payment() {
               <br />
               弊社の
               <span>
-                <Link to="/terms" className="text-decoration-none">
+                <a href="/terms-of-service" className="text-decoration-none">
                   【利用規約】
-                </Link>
+                </a>
               </span>
               および
               <span>
-                <Link to="/privacy" className="text-decoration-none">
+                <a href="/privacy-policy" className="text-decoration-none">
                   【個人情報保護方針】
-                </Link>
+                </a>
               </span>
               に同意したものとみなされます。
               <br />

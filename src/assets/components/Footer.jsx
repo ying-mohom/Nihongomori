@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,43 +10,43 @@ function Footer() {
             {/* Left Section */}
             <div className="col-md-4 mt-5">
               <h5 className="fw-bold fs-2 mb-5">日本語の森</h5>
-              <Link
-                to="/introduce"
+              <a
+                href="/introduce"
                 className="text-decoration-none text-dark mt-3 fs-5"
               >
                 日本語の森とは？
-              </Link>
+              </a>
             </div>
 
             {/* Center Section */}
             <div className="col-md-4 mt-5 pt-5">
-              <Link
-                to="/privacy-policy"
+              <a
+                href="/privacy-policy"
                 className="d-block mb-4 mt-4 pt-3 text-dark text-decoration-none fs-5"
               >
                 個人情報保護方針
-              </Link>
+              </a>
 
-              <Link
-                to="/terms-of-service"
+              <a
+                href="/terms-of-service"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 利用規約
-              </Link>
+              </a>
 
-              <Link
-                to="/"
+              <a
+                href="/"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 よくあるご質問（FAQ）
-              </Link>
+              </a>
 
-              <Link
-                to="/tokushohou"
+              <a
+                href="/tokushohou"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 特定商取引法に基づく表記
-              </Link>
+              </a>
             </div>
 
             {/* Right Section */}
