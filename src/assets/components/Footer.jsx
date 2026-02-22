@@ -35,7 +35,7 @@ function Footer() {
               </a>
 
               <a
-                href="/"
+                href="/faq"
                 className="d-block mb-4 text-dark text-decoration-none fs-5"
               >
                 よくあるご質問（FAQ）

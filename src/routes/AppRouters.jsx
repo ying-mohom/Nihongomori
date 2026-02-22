@@ -10,6 +10,7 @@ import Terms from "../pages/Terms";
 import Tokushohou from "../pages/Tokushohou";
 import AudioBook from "../pages/AudioBook";
 import AudioBookDetails from "../pages/AudioBookDetails";
+import FAQ from "../pages/FAQ";
 
 function AppRouters() {
   return (
@@ -21,6 +22,7 @@ function AppRouters() {
       <Route path="/payment/:id" element={<Payment />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<Terms />} />
+      <Route path="/faq" element={<FAQ />} />
       <Route path="/tokushohou" element={<Tokushohou />} />
       <Route path="/audio/:bookId" element={<AudioBook />} />
       <Route path="/audio/:bookId/:lessonId" element={<AudioBookDetails />} />
