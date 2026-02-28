@@ -1,0 +1,125 @@
+.lesson-page {
+    min-height: 100vh;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .11);
+    border-radius: 10px;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-title {
+    font-size: 20px;
+}
+
+.menu-btn {
+    width: 100%;
+    background: #009c5d;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+}
+
+/* CHILD AREA */
+.lesson-box {
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/* CHILD ITEM */
+.lesson-item {
+    min-height: 50px;
+    padding: 15px 12px 1px 45px;
+    display: flex;
+    border-top: 1px solid #ebebec;
+    border-left: 1px solid #ebebec;
+    border-bottom: 1px solid #ebebec;
+    border-right: 1px solid #ebebec;
+    box-sizing: border-box;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.lesson-item svg {
+    position: absolute;
+    flex-shrink: 0;
+    right: 16px;
+    top: 10px;
+}
+
+.lesson-item:hover {
+    background-color: #ededef;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 30px;
+}
+
+/* VIDEO */
+.video-box {
+    position: relative;
+    max-width: 720px;
+}
+
+.video-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    border-radius: 50%;
+    font-size: 36px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+/* TEXT */
+.lesson-title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.view-count {
+    color: gray;
+    font-size: 14px;
+}
+
+.btn-payment {
+    background: #ebb856;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px auto auto;
+}

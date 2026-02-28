@@ -70,7 +70,7 @@ function Navbar() {
               </a>
               <a
                 className="btn btn-success rounded-pill navbar-button d-flex align-items-center justify-content-center"
-                href="/register"
+                href="/user/register"
               >
                 登録
               </a>
@@ -85,7 +85,7 @@ function Navbar() {
           href="https://www.facebook.com/Nihongonomori"
           target="_blank"
           rel="noreferrer"
-          className=""
+          className="mb-2"
         >
           <img src="/images/facebook.png" alt="facebook" />
         </a>
@@ -93,7 +93,7 @@ function Navbar() {
           href="https://www.instagram.com/nihongono_mori/"
           target="_blank"
           rel="noreferrer"
-          className=""
+          className="mb-2"
         >
           <img src="/images/instagram.png" alt="instagram" />
         </a>

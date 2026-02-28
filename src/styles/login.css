@@ -1,0 +1,210 @@
+/* Page */
+.login-page {
+    min-height: 100vh;
+    background: #fff;
+}
+
+/* Header */
+.login-header {
+    height: 105px;
+    background: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .11);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.close-btn {
+    font-size: 22px;
+    color: rgb(102, 102, 102);
+    font-weight: 700;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.register-btn {
+    border: 1px solid #039d5d;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: transparent;
+    color: #039d5d;
+    margin-right: 15px;
+    padding: 12px 45px;
+    position: absolute;
+    font-size: 14px;
+    right: 20px;
+    top: 30px;
+}
+
+/* Main */
+.login-container {
+    max-width: 550px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+}
+
+/* Input Box */
+.input-box {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    box-shadow: 0 2px 0 #dadada;
+    border-radius: 16px;
+    padding-left: 20px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.icon {
+    color: #aaa;
+}
+
+/* Forgot */
+.forgot {
+    font-size: 16px;
+    color: purple;
+    cursor: pointer;
+    white-space: nowrap;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 13px);
+    text-decoration: none;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background: #1f9d3a;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    box-shadow: 0 4px 0 #16772c;
+}
+
+.login-btn:hover {
+    background: #168f34;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #000;
+    font-weight: 400;
+}
+
+.divider p {
+    margin: 0 15px;
+}
+
+/* Social */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 150%;
+    height: 150%;
+}
+
+/* Error Box */
+.error-box {
+    margin-top: 20px;
+    background: #fff0f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    color: #ff4d4f;
+    border: 1px solid #ffd6d6;
+}
+
+.error-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.error-text p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* *********************************FOR Register Page*********************/
+.login-google {
+    margin-left: 100px;
+}
+
+.btn-login-by-google {
+    border: 2px solid #bababa;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25098);
+    border-radius: 1rem;
+    background: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-login-by-google img {
+    width: 50px;
+    margin-right: 1.3rem;
+}
+
+.basic-form .form-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.basic-form .form-group .social-login-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-group .social-login-area .social-icon img {
+    width: 70px;
+    cursor: pointer;
+}

@@ -35,16 +35,15 @@ body {
 }
 
 .social-sidebar {
-  right: 10px;
-  transform: translateY(140%);
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
   z-index: 1050;
-  margin-right: 20px;
 }
 
 .social-sidebar img {
   width: 73px;
   height: 73px;
-  margin-bottom: 9px;
 }
 
 /* **************CSS for Navbar End****************************** */
