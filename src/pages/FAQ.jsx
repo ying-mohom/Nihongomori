@@ -170,21 +170,71 @@ const faqs = [
 	},
 	{
 		question: "アカウントを削除したい",
-		answer: (
+		answer: (showDeleteForm, setShowDeleteForm) => (
 			<>
-				アカウントを一度削除してしまうと、データを復元することができなくなります。<br /><br />
+				{!showDeleteForm ? (
+					<>
+						アカウントを一度削除してしまうと、データを復元することができなくなります。
+						<br /><br />
 
-				削除されたい場合は、<span style={{ textDecoration: "none", color: "#039d5d" }}>こちらのページ</span>からお手続きください。<br /><br />
+						削除されたい場合は、
+						<span
+							style={{
+								textDecoration: "none",
+								color: "#039d5d",
+								cursor: "pointer",
+							}}
+							onClick={() => setShowDeleteForm(true)}
+						>
+							こちらのページ
+						</span>
+						からお手続きください。
+						<br /><br />
 
-				もし退学手続きが上手く行えない場合は、その旨と下記4点を添えて日本語の森にメールを送ってください。<br /><br />
+						もし退学手続きが上手く行えない場合は、その旨と下記4点を添えて日本語の森にメールを送ってください。
+						<br /><br />
 
-				・ご登録名<br />
-				・登録頂いたメールアドレス<br />
-				・生年月日<br />
-				・写真付き身分証明書<br /><br />
+						・ご登録名<br />
+						・登録頂いたメールアドレス<br />
+						・生年月日<br />
+						・写真付き身分証明書<br /><br />
 
-				※アカウントを削除しても、プランは自動で解約されません。<br />
-				アカウントを削除する前に、プランを解約してください。
+						※アカウントを削除しても、プランは自動で解約されません。
+						<br />
+						アカウントを削除する前に、プランを解約してください。
+					</>
+				) : (
+					<>
+						<h5 className="mb-2 text-center fs-4">アカウントを削除する理由</h5>
+						<div style={{ marginLeft: "190px", lineHeight: "1.5" }}>
+							<div className="mb-2 fs-5">
+								<input type="radio" name="reason" style={{ accentColor: "#039d5d", width: "20px", height: "20px" }} /> JLPTに合格したため
+							</div>
+
+							<div className="mb-2 fs-5">
+								<input type="radio" name="reason" style={{ accentColor: "#039d5d", width: "20px", height: "20px" }} /> 利用できる頻度が少ないため
+							</div>
+
+							<div className="mb-2 fs-5">
+								<input type="radio" name="reason" style={{ accentColor: "#039d5d", width: "20px", height: "20px" }} /> コンテンツに不満があるため
+							</div>
+
+							<div className="mb-2 fs-5">
+								<input type="radio" name="reason" style={{ accentColor: "#039d5d", width: "20px", height: "20px" }} /> 別サービスに乗り換えるため
+							</div>
+
+							<div className="mb-2 fs-5">
+								<input type="radio" name="reason" style={{ accentColor: "#039d5d", width: "20px", height: "20px" }} /> その他
+							</div>
+						</div>
+
+						<div className="text-center">
+							<button className="btn btn-success mb-2 px-5 py-3">
+								退会手続きをする
+							</button>
+						</div>
+					</>
+				)}
 			</>
 		),
 	},
@@ -192,6 +242,7 @@ const faqs = [
 
 function FAQ() {
 	const [openIndex, setOpenIndex] = useState(null);
+	const [showDeleteForm, setShowDeleteForm] = useState(false);
 
 	const toggle = (index) => {
 		setOpenIndex(openIndex === index ? null : index);
@@ -262,7 +313,9 @@ function FAQ() {
 									lineHeight: "27px",
 								}}
 							>
-								{faq.answer}
+								{typeof faq.answer === "function"
+									? faq.answer(showDeleteForm, setShowDeleteForm)
+									: faq.answer}
 							</div>
 						)}
 					</div>

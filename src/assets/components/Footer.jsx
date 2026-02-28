@@ -55,7 +55,11 @@ function Footer() {
               <h5 className="fw-bold fs-2 ms-1">SNS</h5>
 
               <div className="d-flex gap-4 mt-5 mb-5">
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.facebook.com/Nihongonomori"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa-brands fa-square-facebook navbar-icon fs-1"></i>
                 </a>
 
@@ -67,7 +71,11 @@ function Footer() {
                   <i className="fa-brands fa-youtube navbar-icon fs-1"></i>
                 </a>
 
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/nihongono_mori/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa-brands fa-instagram navbar-icon fs-1"></i>
                 </a>
               </div>

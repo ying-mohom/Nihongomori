@@ -36,17 +36,25 @@ function Navbar() {
 
             {/* Right side */}
             <div className="d-flex align-items-center custom-margin">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/Nihongonomori"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {/* FIX: className instead of class */}
                 <i className="fa-brands fa-square-facebook navbar-icon fs-4"></i>
               </a>
 
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.youtube.com/c/nihongonomori2013/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-youtube navbar-icon fs-4"></i>
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/nihongono_mori/"
                 target="_blank"
                 rel="noreferrer"
                 className="me-4"
@@ -74,7 +82,7 @@ function Navbar() {
       {/* Fixed Social Sidebar */}
       <div className="d-flex flex-column position-fixed social-sidebar">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/Nihongonomori"
           target="_blank"
           rel="noreferrer"
           className=""
@@ -82,7 +90,7 @@ function Navbar() {
           <img src="/images/facebook.png" alt="facebook" />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/nihongono_mori/"
           target="_blank"
           rel="noreferrer"
           className=""

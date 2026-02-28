@@ -7,10 +7,11 @@ export const BasicJapanese = [
         description: `This course offers video lessons aimed at JLPT N4."The video lessons in this course are based on the contents of  “Minna no Nihongo Elementary II "<br/><br/><br/>
         ※At Nihongo no Mori, we have officially partnered with  3A Corporation, the publisher of “Minna no Nihongo“, to produce these videos.`,
         paymentTitle: "Payment Methods",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "Credit Card",
             bank: "Bank Transfer",
+            paypal: "Paypal",
         },
         bankContent1: `
                 <h4>”Payment Instructions”</h4>
@@ -37,6 +38,31 @@ export const BasicJapanese = [
                 </p>
                 <div class="mt-3 dotted-border"></div>
         `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal Transfer Instructions"</strong>
+                <br />
+                Payment Method:
+                <br />
+                <div class="ms-2">
+                    ① Please transfer ¥7,000 to the following PayPal account:<span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    Fee details:
+                    <br />
+                    ¥5,500 (BASIC JAPANESE JLPT N4)
+                    <br />
+                    + ￥500 (Paypal fee)
+                    <br />
+                    + ￥1,000(handling fee)
+                    <br />
+                    ② At the time of transfer, take a photo of the receipt issued by PayPal or a screenshot confirming the transfer, and send it to
+                    <br />
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br />
+                    ③ Please wait a moment until your account is activated.
+                </div>
+            </p>
+        `,
     },
     {
         id: 8,
@@ -46,10 +72,11 @@ export const BasicJapanese = [
         description: `This course offers video lessons aimed at JLPT N5."The video lessons in this course are based on the contents of  “Minna no Nihongo Elementary I "<br/><br/><br/>
         ※At Nihongo no Mori, we have officially partnered with  3A Corporation, the publisher of “Minna no Nihongo“, to produce these videos.`,
         paymentTitle: "Payment Methods",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "Credit Card",
             bank: "Bank Transfer",
+            paypal: "Paypal",
         },
         bankContent1: `
                 <h4>”Payment Instructions”</h4>
@@ -76,6 +103,31 @@ export const BasicJapanese = [
                 </p>
                 <div class="mt-3 dotted-border"></div>
         `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal Transfer Instructions"</strong>
+                <br />
+                Payment Method:
+                <br />
+                <div class="ms-2">
+                    ① Please transfer ¥7,000 to the following PayPal account:<span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    Fee details:
+                    <br />
+                    ¥5,500 (BASIC JAPANESE JLPT N5)
+                    <br />
+                    + ￥500 (Paypal fee)
+                    <br />
+                    + ￥1,000(handling fee)
+                    <br />
+                    ② At the time of transfer, take a photo of the receipt issued by PayPal or a screenshot confirming the transfer, and send it to
+                    <br />
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br />
+                    ③ Please wait a moment until your account is activated.
+                </div>
+            </p>
+        `,
     },
     {
         id: 9,
@@ -87,10 +139,12 @@ export const BasicJapanese = [
         <p>*在日语之森，我们已与《大家的日语》出版方 3Aネットワーク公司正式合作，共同为大家制作这些视频。</p>
         <p>请选择您想学习的课程并支付费用。</p>`,
         paymentTitle: "支付方式",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "信用卡支付",
             bank: "银行转账",
+            paypal: "Paypal",
+
         },
         bankContent1: `
                 <h4>＂付款指南＂</h4>
@@ -117,6 +171,30 @@ export const BasicJapanese = [
                 </p>
                 <div class="mt-3 dotted-border"></div>
         `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal 转账指南"</strong>
+                <br />
+                支付方式：
+                <br />
+                <div class="ms-2">
+                    ①请将¥7,000转入以下PayPal账户：<br /><span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    费用明细：
+                    <br />
+                    ¥5,500（基础日语 JLPT N4）
+                    <br />
+                    + ¥500（PayPal费用）
+                    <br />
+                    + ¥1,000（手续费）
+                    <br />
+                    ② 转账时，请拍摄PayPal出具的收据或确认转账的截图，并发送至
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br />
+                    ③ 请稍等片刻，直到您的账户被激活。
+                </div>
+            </p>
+        `,
     },
     {
         id: 10,
@@ -128,10 +206,11 @@ export const BasicJapanese = [
         <p>*在日语之森，我们已与《大家的日语》出版方 3Aネットワーク公司正式合作，共同为大家制作这些视频。</p>
         <p>请选择您想学习的课程并支付费用。</p>`,
         paymentTitle: "支付方式",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "信用卡支付",
             bank: "银行转账",
+            paypal: "Paypal"
         },
         bankContent1: `
                 <h4>＂付款指南＂</h4>
@@ -158,6 +237,30 @@ export const BasicJapanese = [
                 </p>
                 <div class="mt-3 dotted-border"></div>
         `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal 转账指南"</strong>
+                <br />
+                支付方式：
+                <br />
+                <div class="ms-2">
+                    ①请将¥7,000转入以下PayPal账户：<br /><span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    费用明细：
+                    <br />
+                    ¥5,500（基础日语 JLPT N5）
+                    <br />
+                    + ¥500（PayPal费用）
+                    <br />
+                    + ¥1,000（手续费）
+                    <br />
+                    ② 转账时，请拍摄PayPal出具的收据或确认转账的截图，并发送至
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br />
+                    ③ 请稍等片刻，直到您的账户被激活。
+                </div>
+            </p>
+        `,
     },
     {
         id: 11,
@@ -169,10 +272,11 @@ export const BasicJapanese = [
         <p>※일본어의 숲에서는 「みんなの日本語」의 출판사인 「3A네트워크」와 공식적으로 제휴하여 강의를 제작하고 있습니다. </p>
         <p>공부하고 싶은 코스를 선택하고, 수업료를 지불합니다. </p>`,
         paymentTitle: "결제 방법",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "신용카드 결제",
             bank: "은행 송금",
+            paypal: "Paypal"
         },
         bankContent1: `
                 <h4>"송금 안내"</h4>
@@ -200,6 +304,31 @@ export const BasicJapanese = [
                 </p>
                 <div class="mt-3 dotted-border"></div>
         `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal 송금 안내"</strong>
+                <br />
+                결제 방법:
+                <br />
+                <div class="ms-2">
+                    ① ¥7,000을 다음 PayPal 계정으로 송금해 주세요:<br /><span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    요금 내역:
+                    <br />
+                    ¥5,500 (기초 일본어 JLPT N4)
+                    <br />
+                    + ¥500 (PayPal 수수료)
+                    <br />
+                    + ¥1,000 (처리 수수료)
+                    <br />
+                    ② 송금 시 PayPal에서 발급한 영수증 또는 송금 확인 스크린샷을 촬영하여 
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    으로 보내주세요.
+                    <br /><br />
+                    ③ 계정이 활성화될 때까지 잠시 기다려 주세요.
+                </div>
+            </p>
+        `,
     },
     {
         id: 12,
@@ -211,10 +340,11 @@ export const BasicJapanese = [
         <p>※일본어의 숲에서는 「みんなの日本語」의 출판사인 「3A네트워크」와 공식적으로 제휴하여 강의를 제작하고 있습니다. </p>
         <p>공부하고 싶은 코스를 선택하고, 수업료를 지불합니다. </p>`,
         paymentTitle: "결제 방법",
-        paymentMethods: ["card", "bank"],
+        paymentMethods: ["card", "bank", "Paypal"],
         paymentMethodsLabels: {
             card: "신용카드 결제",
             bank: "은행 송금",
+            paypal: "Paypal"
         },
         bankContent1: `
                 <h4>"송금 안내"</h4>
@@ -241,6 +371,31 @@ export const BasicJapanese = [
                    ③송금이 확인되면, 일본어의 숲의 인터넷 강의를 이용할 수 있습니다. 기다려 주세요.
                 </p>
                 <div class="mt-3 dotted-border"></div>
+        `,
+        paypalContent: `
+                <p>
+                <strong>"PayPal 송금 안내"</strong>
+                <br />
+                결제 방법:
+                <br />
+                <div class="ms-2">
+                    ① ¥7,000을 다음 PayPal 계정으로 송금해 주세요:<br /><span class="text-green-color">nihongonomori@gmail.com</span>
+                    <br /><br/>
+                    요금 내역:
+                    <br />
+                    ¥5,500 (기초 일본어 JLPT N5)
+                    <br />
+                    + ¥500 (PayPal 수수료)
+                    <br />
+                    + ¥1,000 (처리 수수료)
+                    <br />
+                    ② 송금 시 PayPal에서 발급한 영수증 또는 송금 확인 스크린샷을 촬영하여 
+                    <span class="text-green-color">nihongonomori@gmail.com</span>
+                    으로 보내주세요.
+                    <br /><br />
+                    ③ 계정이 활성화될 때까지 잠시 기다려 주세요.
+                </div>
+            </p>
         `,
     },
 
