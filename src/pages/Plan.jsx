@@ -79,10 +79,7 @@ function Plan() {
 
                     {/* Button */}
                     <div className="action">
-                      <a
-                        href={`/payment/${course.id}`}
-                        className="btn-payment"
-                      >
+                      <a href={`/payment/${course.id}`} className="btn-payment">
                         しはらう
                       </a>
                     </div>

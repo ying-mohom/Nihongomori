@@ -38,7 +38,7 @@ function Navbar() {
               <li className="nav-item ms-3">
                 <a
                   className="nav-link"
-                  href="my-book"
+                  href="/my-book"
                   style={{ fontWeight: 500, color: "#323232" }}
                 >
                   本
