@@ -72,6 +72,12 @@ body {
     background-color: #039d5d;
     margin-right: 10px;
   }
+
+  .mobile-plant-group {
+    position: absolute;
+    bottom: 5px;
+    right: 90px;
+  }
 }
 
 /* **************CSS for Navbar End****************************** */

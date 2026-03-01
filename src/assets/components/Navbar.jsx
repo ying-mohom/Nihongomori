@@ -162,7 +162,7 @@ function Navbar() {
           </ul>
 
           {/* Plant Group */}
-          <div className="d-flex align-items-end justify-content-end me-5 pe-3 mt-5 pt-5">
+          <div className="mobile-plant-group d-flex align-items-end justify-content-end">
             <img
               src="/images/footer.png"
               alt="small plant"
