@@ -13,22 +13,43 @@ function Navbar() {
               style={{ height: "50px" }}
             />
           </a>
+          {/* Mobile Hamburger */}
+          <button
+            className="navbar-toggler border-0 d-lg-none ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
           <div className="collapse navbar-collapse ms-4" id="navbarContent">
             {/* Left links */}
             <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <a className="nav-link" href="/introduce">
+                <a
+                  className="nav-link"
+                  href="/introduce"
+                  style={{ fontWeight: 500, color: "#323232" }}
+                >
                   日本語の森とは？
                 </a>
               </li>
               <li className="nav-item ms-3">
-                <a className="nav-link" href="my-book">
+                <a
+                  className="nav-link"
+                  href="my-book"
+                  style={{ fontWeight: 500, color: "#323232" }}
+                >
                   本
                 </a>
               </li>
               <li className="nav-item ms-3">
-                <a className="nav-link" href="/plan">
+                <a
+                  className="nav-link"
+                  href="/plan"
+                  style={{ fontWeight: 500, color: "#323232" }}
+                >
                   プラン
                 </a>
               </li>
@@ -78,6 +99,88 @@ function Navbar() {
           </div>
         </div>
       </nav>
+
+      {/* ===== Mobile Menu Only ===== */}
+      <div
+        className="offcanvas offcanvas-end d-lg-none"
+        tabIndex="-1"
+        id="mobileMenu"
+        data-bs-scroll="true"
+      >
+        <div className="offcanvas-header">
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+
+        <div className="offcanvas-body">
+          {/* Login Buttons */}
+          <div className="mb-4">
+            <a
+              href="/login"
+              className="btn btn-outline-success rounded-pill mb-3"
+              style={{ width: "35%", fontSize: "16px" }}
+            >
+              ログイン
+            </a>
+            <br />
+            <a
+              href="/user/register"
+              className="btn btn-success rounded-pill"
+              style={{ width: "35%", fontSize: "16px" }}
+            >
+              登録
+            </a>
+          </div>
+
+          <hr />
+
+          {/* Menu Links */}
+          <ul className="list-unstyled mt-4 mobile-menu-links">
+            <li>
+              <a href="/" className="mobile-link">
+                <span className="custom-ul"></span>TOP
+              </a>
+            </li>
+            <li>
+              <a href="/introduce" className="mobile-link">
+                <span className="custom-ul"></span>日本語の森とは？
+              </a>
+            </li>
+            <li>
+              <a href="/my-book" className="mobile-link">
+                <span className="custom-ul"></span>本
+              </a>
+            </li>
+            <li>
+              <a href="/plan" className="mobile-link">
+                <span className="custom-ul"></span>プラン
+              </a>
+            </li>
+          </ul>
+
+          {/* Plant Group */}
+          <div className="d-flex align-items-end justify-content-end me-5 pe-3 mt-5 pt-5">
+            <img
+              src="/images/footer.png"
+              alt="small plant"
+              height="50"
+              width="60"
+            />
+
+            <img
+              src="/images/footer.png"
+              alt="big plant"
+              height="90"
+              width="80"
+              className="position-relative"
+              style={{ marginLeft: "-53px" }}
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Fixed Social Sidebar */}
       <div className="d-flex flex-column position-fixed social-sidebar">
