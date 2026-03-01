@@ -12098,8 +12098,8 @@ export const Japanese = () => {
   );
 };
 
-// Bunka3 Page
-export const Bunka3 = () => {
+// Geography Page
+export const Geography = () => {
   const chapters = [
     {
       id: 1,
@@ -12125,8 +12125,8 @@ export const Bunka3 = () => {
   );
 };
 
-// Geography Page
-export const Geography = () => {
+// Bunka3 Page
+export const Bunka3 = () => {
   const chapters = [
     {
       id: 1,
