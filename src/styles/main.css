@@ -511,3 +511,280 @@ body {
 }
 
 /* **************CSS for Plan Page End****************************** */
+/* **************CSS for Level Page Start****************************** */
+
+/* Home card override to keep existing card style but as Link */
+.home-card {
+  display: block;
+}
+
+/* ── Page shell ── */
+.lv-page {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  padding-top: 5rem;
+}
+
+/* ── Header / breadcrumb area ── */
+.lv-header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 24px 32px 20px;
+}
+
+.lv-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.lv-bc-link {
+  color: #039d5d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.lv-bc-link:hover {
+  opacity: 0.75;
+}
+
+.lv-bc-sep {
+  color: #bbb;
+  font-size: 16px;
+}
+
+.lv-bc-current {
+  color: #555;
+  font-weight: 600;
+}
+
+.lv-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lv-title-jlpt {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #039d5d;
+  padding: 3px 12px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.lv-title-level {
+  color: #039d5d;
+}
+
+.lv-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Grid wrapper ── */
+.lv-grid-wrap {
+  width: 100%;
+  margin: 24px auto 0;
+  padding: 0;
+}
+
+/* 2-column responsive grid */
+.lv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* ── Individual card ── */
+.lv-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 8px 24px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1.5px solid #e2e2e2;
+  box-shadow: 0 0 10px 2px rgba(180, 180, 180, 0.35);
+  text-decoration: none !important;
+  color: inherit;
+  overflow: hidden;
+  cursor: pointer;
+  animation: lvCardIn 0.4s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+/* ── Left image column — background-image div with green border ── */
+.lv-card-img-wrap {
+  flex-shrink: 0;
+  width: 118px;
+  min-width: 118px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2.5px solid #039d5d;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+
+/* 0% pill — pinned to bottom of the green box, oval with bold border */
+.lv-card-progress {
+  width: 100%;
+  background: #fff;
+  border: 3px solid #039d5d;
+  border-radius: 0.7rem;
+  text-align: center;
+
+
+}
+
+.lv-card-progress span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #039d5d;
+  line-height: 1;
+}
+
+/* ── Right body column ── */
+.lv-card-body {
+  flex: 1;
+  padding: 10px 10px 10px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: 16px;
+  height: 100%;
+}
+
+/* Single inline row: title + count badge + bookmark */
+.lv-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  flex-wrap: nowrap;
+  min-height: 50px;
+}
+
+.lv-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.45;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+/* Orange count badge — e.g. "331個" */
+.lv-card-count {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebb855;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 5px;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin-top: 1px;
+  height: 27px;
+}
+
+/* Bookmark button */
+.lv-bookmark-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.15s;
+}
+
+
+/* Thin divider between title row and teacher badge */
+.lv-card-divider {
+  margin: 8px 0 10px;
+  border: none;
+  border-top: 1px solid #0e0a0a;
+}
+
+/* Teacher green badge */
+.lv-teacher-badge {
+  display: inline-block;
+  background: #039d5d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 6px;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* ── Animations ── */
+@keyframes lvCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive: single column on small screens ── */
+@media (max-width: 600px) {
+  .lv-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .lv-header {
+    padding: 16px 16px 14px;
+  }
+
+  .lv-grid-wrap {
+    padding: 0 12px;
+    margin-top: 16px;
+  }
+
+  .lv-card-img-wrap {
+    width: 78px;
+  }
+
+  .lv-card-img {
+    width: 62px;
+    height: 70px;
+  }
+
+  .lv-card-progress {
+    width: 62px;
+  }
+}
+
+/* **************CSS for Level Page End****************************** */

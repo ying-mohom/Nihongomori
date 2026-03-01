@@ -495,7 +495,7 @@ function Payment() {
               <h3 className="text-center text-green-color title mt-2 mb-2">
                 ご購入前の同意事項
               </h3>
-              <div className="modal-body" style={{ fontSize: "22px" }}>
+              <div className="modal-body">
                 以下の内容をご確認のうえ、下の「同意する」ボタンを押すことで、
                 <br />
                 弊社の

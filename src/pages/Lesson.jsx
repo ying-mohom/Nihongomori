@@ -11,6 +11,26 @@ function Lesson({ courseTitle, breadcrumbs, chapters }) {
   );
   const [showLockedMessage, setShowLockedMessage] = useState(false);
 
+  function isLockedLesson(lesson, video) {
+    return lesson === "みることができません。" || !video;
+  }
+
+  React.useEffect(() => {
+    const firstLesson = chapters[0].lessons[0];
+    const firstVideo = chapters[0].videos[0];
+    const firstViewCount = chapters[0].viewCounts[0];
+    setSelectedLesson(firstLesson);
+    if (isLockedLesson(firstLesson, firstVideo)) {
+      setShowLockedMessage(true);
+      setSelectedVideo(null);
+      setSelectedViewCount(null);
+    } else {
+      setShowLockedMessage(false);
+      setSelectedVideo(firstVideo);
+      setSelectedViewCount(firstViewCount);
+    }
+  }, [chapters]);
+
   // Toggle chapter open/close
   function toggleChapter(id) {
     setOpenChapter(openChapter === id ? null : id);
@@ -20,7 +40,7 @@ function Lesson({ courseTitle, breadcrumbs, chapters }) {
   function handleLessonClick(lesson, video, viewCount) {
     setSelectedLesson(lesson);
 
-    if (lesson === "みることができません。" || !video) {
+    if (isLockedLesson(lesson, video)) {
       setShowLockedMessage(true);
       setSelectedVideo(null);
       setSelectedViewCount(null);
@@ -48,14 +68,14 @@ function Lesson({ courseTitle, breadcrumbs, chapters }) {
                   className="menu-btn"
                   onClick={() => toggleChapter(chapter.id)}
                 >
-                  {chapter.title}
-                  <span>
-                    {openChapter === chapter.id ? (
-                      <i className="fa-solid fa-angle-down"></i>
-                    ) : (
-                      <i className="fa-solid fa-angle-right"></i>
-                    )}
-                  </span>
+                  <span className="menu-title">{chapter.title}</span>
+                  <i
+                    className={
+                      openChapter === chapter.id
+                        ? "fa-solid fa-angle-down"
+                        : "fa-solid fa-angle-right"
+                    }
+                  ></i>
                 </button>
 
                 {/* Lessons */}
@@ -175,7 +195,9 @@ function Lesson({ courseTitle, breadcrumbs, chapters }) {
                     className="youtube-video"
                   ></iframe>
                 )}
-                <h5 className="lesson-title">{selectedLesson}</h5>
+                <h5 className="lesson-title">
+                  <div dangerouslySetInnerHTML={{ __html: selectedLesson }} />
+                </h5>
                 {selectedViewCount && (
                   <p className="view-count">{selectedViewCount}</p>
                 )}
